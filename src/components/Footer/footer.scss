@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto 50px;
+  padding-top: 50px;
+  border-top: 1px solid rgb(189, 189, 189);
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+footer .atendimento {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li a {
+    text-decoration: none;
+    line-height: 25px;
+    color: #2d2d2d;
+    font-weight: lighter;
+  }
+}
+
+footer .pagamentos .formas-pagamento {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 270px;
+  margin: 0 auto;
+
+  .sistema.master {
+    height: 48px;
+  }
+
+  .sistema.visa {
+    height: 68px;
+  }
+
+  .sistema.pix {
+    height: 40px;
+  }
+
+  .sistema.boleto {
+    width: 100px;
+    height: 44px;
+  }
+}
+
+footer .redes-sociais .icon {
+  display: flex;
+  gap: 20px;
+}
