@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-section {
+section .section-title h2 {
   font-family: "Roboto", sans-serif;
   align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 62px auto;
+}
 
-  h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #2d2d2d;
-    text-align: center;
-  }
-
+section {
   .cards {
     display: flex;
     justify-content: space-around;

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+section .section-title h2 {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 62px auto;
+}
+
+section .lancamentos {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+section .lancamentos .grid-lancamentos-img {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: repeat(3, 130px);
+  column-gap: 38px;
+  row-gap: 15px;
+
+  .baton-liquido-aberto {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .baton-liquido-fechado {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .baton-normal {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+section .lancamentos .grid-lancamentos-img img {
+  width: 130px;
+  height: 130px;
+}
+
+section .lancamentos .grid-lancamentos-img .mostruario-img {
+  img {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+.lancamentos .grid-seletor-lancamentos {
+  display: block;
+  padding: 20px 20px 0 20px;
+  width: 477px;
+  height: 400px;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #bdbdbd;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+
+  .lancamentos .grid-seletor-lancamentos .stars {
+    margin-top: 15px;
+  }
+
+  .lancamento-nome h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .lancamento-nome p {
+    font-size: 10px;
+  }
+}
+
+.lancamentos .grid-seletor-lancamentos .botao-seletor {
+  display: flex;
+  gap: 20px;
+
+  button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .botao-azul {
+    background-color: #b1b0d8;
+  }
+
+  .botao-vermelho {
+    background-color: #e1342a;
+  }
+
+  .botao-marrom {
+    background-color: #73282d;
+  }
+
+  .botao-base {
+    background-color: #de755e;
+  }
+}
+
+.lancamentos .grid-seletor-lancamentos .lancamento-descricao {
+  h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 17px;
+    margin: 0;
+  }
+}

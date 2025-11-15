@@ -3,7 +3,9 @@ import "./makup.scss"
 function Makeup() {
     return (
         <section>
-            <h2>LOOKS E DICAS DE MAQUIAGEM</h2>
+            <div className="section-title">
+                <h2>LOOKS E DICAS DE MAQUIAGEM</h2>
+            </div>
             <div className="cards">
                 <article className="card-labios"></article>
                 <article className="card-olhos"></article>
