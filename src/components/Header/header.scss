@@ -19,3 +19,13 @@ header {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  header {
+    height: 140px;
+  }
+
+  header ul {
+    font-size: 25px;
+  }
+}

@@ -44,3 +44,12 @@ section {
   width: 320px;
   height: 500px;
 }
+
+@media screen and (min-width: 1920px) {
+  section {
+    .cards {
+      justify-content: center;
+      gap: 60px;
+    }
+  }
+}
