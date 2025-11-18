@@ -55,7 +55,7 @@ section .lancamentos .grid-lancamentos-img .mostruario-img {
   width: 477px;
   height: 400px;
   font-family: "Roboto", sans-serif;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 2px #00000080;
 
   .lancamentos .grid-seletor-lancamentos .stars {
     margin-top: 15px;
@@ -69,6 +69,7 @@ section .lancamentos .grid-lancamentos-img .mostruario-img {
 
   .lancamento-nome p {
     font-size: 10px;
+    margin: 5px auto 15px;
   }
 }
 
@@ -77,11 +78,17 @@ section .lancamentos .grid-lancamentos-img .mostruario-img {
   gap: 20px;
 
   button {
-    border: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+      border: 3px solid #000000;
+      transform: scale(1.05);
+    }
   }
 
   .botao-azul {
@@ -104,11 +111,90 @@ section .lancamentos .grid-lancamentos-img .mostruario-img {
 .lancamentos .grid-seletor-lancamentos .lancamento-descricao {
   h4 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 15px auto 10px;
   }
 
   p {
     font-size: 17px;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section .lancamentos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .section-title h2 {
+      font-size: 20px;
+    }
+  }
+
+  section .lancamentos .grid-lancamentos-img {
+    display: block;
+
+    .baton-liquido-aberto {
+      display: none;
+    }
+
+    .baton-liquido-fechado {
+      display: none;
+    }
+
+    .baton-normal {
+      display: none;
+    }
+
+    .mostruario-img img {
+      width: 155px;
+      height: 155px;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .lancamentos .grid-seletor-lancamentos {
+    width: 363px;
+    height: 288px;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .botao-seletor {
+      justify-content: center;
+    }
+
+    .botao-seletor button {
+      width: 36px;
+      height: 36px;
+      margin-top: 5px;
+    }
+  }
+
+  .lancamentos .grid-seletor-lancamentos .stars img {
+    width: 97px;
+    height: 31px;
+  }
+
+  .lancamentos .grid-seletor-lancamentos .lancamento-nome h3 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .lancamentos .grid-seletor-lancamentos .lancamento-nome p {
+    margin: 10px auto;
+  }
+
+  .lancamentos .grid-seletor-lancamentos .lancamento-descricao h4 {
+    font-size: 15px;
+    margin: 10px auto;
+  }
+
+  .lancamentos .grid-seletor-lancamentos .lancamento-descricao p {
+    font-size: 13px;
+    text-align: left;
   }
 }

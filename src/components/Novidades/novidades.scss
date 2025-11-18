@@ -1,5 +1,14 @@
 .novidades-produto-1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   height: 650px;
+}
+
+@media screen and (max-width: 768px) {
+  .novidades-produto-1 {
+    height: 232px;
+  }
 }

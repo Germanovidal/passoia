@@ -35,7 +35,9 @@ function Lancamentos() {
                         <img src={baton3} alt="imagem do recipiente baton comum" />
                     </div>
                     <div className="mostruario-img">
-                        <img src={cor} alt="imagem do baton azul" />
+                        <div className="mostruario-img principal">
+                            <img src={cor} alt="imagem do baton azul" />
+                        </div>
                     </div>
                 </div>
                 

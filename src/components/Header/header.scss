@@ -4,13 +4,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 158px;
+  height: 130px;
   margin: 20px;
 
   ul {
     display: flex;
     list-style: none;
-    // border: solid;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -18,14 +17,78 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  a {
+    text-decoration: none;
+    color: #2d2d2d;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+.nav {
+  display: block;
+}
+
+@media screen and (max-width: 786px) {
+  header {
+    position: relative;
+    .logo-header {
+      width: 116px;
+      height: 39px;
+    }
+
+    .menu-mobile {
+      display: block;
+    }
+
+    .navigation-menu {
+      padding: 38px 48px;
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .menu-button {
+    display: block;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-overlay {
+    display: none;
+
+    &.active {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 280px;
+      height: 80vh;
+      background: white;
+    }
+  }
+
+  .list-links .nav-item a {
+    font-size: 20px;
+    color: #2d2d2d;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-  header {
-    height: 140px;
-  }
-
-  header ul {
-    font-size: 25px;
-  }
 }
