@@ -9,6 +9,13 @@
   height: 750px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: auto;
+    height: 232px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .hero-img {
     height: 1020px;

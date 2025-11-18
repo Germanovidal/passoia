@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 section .section-title h2 {
   font-family: "Roboto", sans-serif;
   align-items: center;
@@ -45,14 +51,27 @@ section {
   background-size: cover;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   section .section-title h2 {
     font-size: 20px;
     margin: 32px auto;
   }
+
+  .cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .card-labios,
+  .card-olhos,
+  .card-rosto,
+  .card-tendencia {
+    width: 160px;
+    height: 265px;
+  }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (min-width: 1360px) {
   .card-labios,
   .card-olhos,
   .card-rosto,

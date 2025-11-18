@@ -27,13 +27,11 @@ footer .atendimento {
     text-decoration: none;
     line-height: 25px;
     color: #2d2d2d;
-    font-weight: lighter;
+    font-weight: 300;
   }
 }
 
 footer .pagamentos .formas-pagamento {
-  display: flex;
-  justify-content: flex-start;
   gap: 10px;
   flex-wrap: wrap;
   width: 270px;
@@ -62,14 +60,51 @@ footer .redes-sociais .icon {
   gap: 20px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   footer {
-    width: 402px;
-    height: 193px;
+    width: auto;
+    height: 200px;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px;
+    column-gap: 40px;
+    row-gap: 20px;
 
     h4 {
       font-size: 11px;
+    }
+  }
+
+  footer .pagamentos {
+    width: 150px;
+  }
+
+  footer .pagamentos .formas-pagamento {
+    flex-wrap: wrap;
+    .sistema.master {
+      height: 20px;
+    }
+
+    .sistema.visa {
+      height: 34px;
+    }
+
+    .sistema.pix {
+      height: 20px;
+    }
+
+    .sistema.boleto {
+      width: 50px;
+      height: 22px;
+    }
+  }
+
+  footer .redes-sociais .icon {
+    display: flex;
+    gap: 10px;
+
+    a img {
+      width: 20px;
     }
   }
 }
